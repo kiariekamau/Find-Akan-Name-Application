@@ -5,6 +5,8 @@ var date = function(CC,YY,MM,DD) {
   var YY = parseInt(prompt("Enter the year you were born,if its 1989 input 89:"));
   var MM=parseInt( prompt("Enter the month you were born:"));
   var DD= parseInt(prompt("Enter the day you were born:"));
+  alert( date(CC,YY,MM,DD));
+date.toExponential();
 if (d=0) {
     console.log("sunday");
   } else if (d=1) {
