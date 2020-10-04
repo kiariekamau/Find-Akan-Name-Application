@@ -1,11 +1,11 @@
 var date = function() {
-  var CC=parseInt(prompt("Enter the century you were born,if its 2000 input 20:"));
+  var CC=parseInt(prompt("Enter the century you were born,if its 1989 input 19:"));
   var YY = parseInt(prompt("Enter the year you were born,if its 1989 input 89:"));
-  var MM=parseInt( prompt("Enter the month you were born:"));
+  var MM=parseInt( prompt("Enter the month you were born e.g if january enter 1:"));
     if (MM<=0 || MM>12) {
     return alert("invalid month please enter a valid month")
  }
-  var DD= parseInt(prompt("Enter the day you were born:"));
+  var DD= parseInt(prompt("Enter the day you were born e.g 15:"));
     if (DD<=0 || DD>31) {
     return alert ("invalid date please enter a valid date")
  }
@@ -13,7 +13,7 @@ var date = function() {
  } 
  
   var results=date().toFixed()
-  var gender= prompt("Enter your gender:");
+  var gender= prompt("Enter your gender female/male:");
     if (results<=0) {
     alert("sunday");
   } else if (results==1) {

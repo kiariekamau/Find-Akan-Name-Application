@@ -1,8 +1,7 @@
-# portfolio name
-Find-Akan-Name-Application
-##Description
+# Find-Akan-Name-Application
+## Description
 This project is a web application that calculates and identifies your akan name.
-#### By
+#### Contributors
  Dennis Kiarie
 ## Setup instructions
 -Clone this repository to a location in your file sysytem.
@@ -14,7 +13,7 @@ HTML was used to frame the application,CSS was used to style the wep application
 ## Support and Contact
 If you face any difficulties contact me at:0700175769 / instagram=itskiarie .
 You can also make a contribution to the code.
-##Licence
+## Licence
 Copyright © 2020. All Rights Reserved.
 
 

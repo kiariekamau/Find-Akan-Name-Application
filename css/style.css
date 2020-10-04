@@ -24,6 +24,12 @@ p {
     font-size: 7mm;
     font-family: sans-serif;
 }
+.Retype {
+    font-style: italic;
+    color: seagreen;
+    font-size: 10mm;
+
+}
 body {
     background-color: grey;
 }
