@@ -1,24 +1,60 @@
-var date = function(CC,YY,MM,DD) {
-    return  ( ((CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD)%7
- }
+var date = function() {
   var CC=parseInt(prompt("Enter the century you were born,if its 2000 input 20:"));
   var YY = parseInt(prompt("Enter the year you were born,if its 1989 input 89:"));
   var MM=parseInt( prompt("Enter the month you were born:"));
+     if (MM<=0 || MM>12) {
+     return alert("invalid month please enter a valid month")
+  }
   var DD= parseInt(prompt("Enter the day you were born:"));
-  var results=date(CC,YY,MM,DD).toFixed()
+     if (DD<=0 || DD>31) {
+     return alert ("invalid date please enter a valid date")
+  }
+    return  ( ((CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD)%7
+ } 
+  var results=date().toFixed()
   var gender= parseInt(prompt("Enter your gender:"));
-  if (results=0) {
+    if (results=0) {
     alert("sunday");
-  } else if (results=-1) {
+  } else if (results==1) {
     alert("monday");
-  } else if (results=-2) {
+  } else if (results==2) {
     alert("tuesday");
-  } else if (results=-3){
+  } else if (results==3){
     alert("wednesday");
-  } else if (results=-4){ 
+  } else if (results==4){ 
     alert("thursday"); 
-  } else if (results=-5) { 
+  } else if (results==5) { 
     alert("friday");
   } else {          
     alert("saturday");
+  }
+  if (results==0 && gender=="male") {
+    alert("Kwasi");
+  } else if (results==-1 && gender=="male") {
+    alert("Kwadwo");
+  } else if (results==-2 && gender=="male") {
+    alert("Kwabena");
+  } else if (results==-3 && gender=="male"){
+    alert("Kwaku");
+  } else if (results==-4 && gender=="male"){ 
+    alert("Yaw"); 
+  } else if (results==-5 && gender=="male") { 
+    alert("Kofi");
+  } else {          
+    alert("Kwame");
+  }
+  if (results==0 && gender=="female") {
+    alert("Kwasi");
+  } else if (results==-1 && gender=="female") {
+    alert("Kwadwo");
+  } else if (results==-2 && gender=="female") {
+    alert("Kwabena");
+  } else if (results==-3 && gender=="female"){
+    alert("Kwaku");
+  } else if (results==-4 && gender=="female"){ 
+    alert("Yaw"); 
+  } else if (results==-5 && gender=="female") { 
+    alert("Kofi");
+  } else {          
+    alert("Kwame");
   }
