@@ -5,6 +5,17 @@ h1 {
 h2 {
     color: rgb(75, 193, 240);
 }
+h3 {
+    color: rgb(75, 193, 240);
+    float: left;
+}
+.ladies {
+    padding-left: 30%;
+}
+ol {
+    color:rgb(206, 5, 5);
+    font-size: 7mm;
+}
 body {
     background-color: grey;
 }
