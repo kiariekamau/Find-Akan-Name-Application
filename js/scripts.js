@@ -40,21 +40,20 @@ var date = function() {
     alert("Yaw"); 
   } else if (results==-5 && gender=="male") { 
     alert("Kofi");
-  } else {          
+  } else if(gender=="male"){          
     alert("Kwame");
-  }
-  if (results==0 && gender=="female") {
-    alert("Kwasi");
+  } else if (results==0 && gender=="female") {
+    alert("Akosua");
   } else if (results==-1 && gender=="female") {
-    alert("Kwadwo");
+    alert("Adwoa");
   } else if (results==-2 && gender=="female") {
-    alert("Kwabena");
+    alert("Abenaa");
   } else if (results==-3 && gender=="female"){
-    alert("Kwaku");
+    alert("Akua");
   } else if (results==-4 && gender=="female"){ 
-    alert("Yaw"); 
+    alert("YAA"); 
   } else if (results==-5 && gender=="female") { 
-    alert("Kofi");
-  } else {          
-    alert("Kwame");
+    alert("Afua");
+  } else  {          
+    alert("Ama");
   }
