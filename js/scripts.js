@@ -13,7 +13,7 @@ var date = function() {
  } 
  
   var results=date().toFixed()
-  var gender= parseInt(prompt("Enter your gender:"));
+  var gender= prompt("Enter your gender:");
     if (results<=0) {
     alert("sunday");
   } else if (results==1) {
@@ -31,29 +31,29 @@ var date = function() {
   }
   if (results<=0 && gender=="male") {
     alert("Kwasi");
-  } else if (results==1 && gender==="male") {
+  } else if (results==1 && gender=="male") {
     alert("Kwadwo");
-  } else if (results==2 && gender==="male") {
+  } else if (results==2 && gender=="male") {
     alert("Kwabena");
-  } else if (results==3 && gender==="male"){
+  } else if (results==3 && gender=="male"){
     alert("Kwaku");
-  } else if (results==4 && gender==="male"){ 
+  } else if (results==4 && gender=="male"){ 
     alert("Yaw"); 
-  } else if (results==5 && gender==="male") { 
+  } else if (results==5 && gender=="male") { 
     alert("Kofi");
-  } else if (results==6 && gender==="male"){          
+  } else if (results==6 && gender=="male"){          
     alert("Kwame");
-  } else if (results<=0 && gender==="female") {
+  } else if (results<=0 && gender=="female") {
     alert("Akosua");
-  } else if (results==1 && gender==="female") {
+  } else if (results==1 && gender=="female") {
     alert("Adwoa");
-  } else if (results==2 && gender==="female") {
+  } else if (results==2 && gender=="female") {
     alert("Abenaa");
-  } else if (results==3 && gender==="female"){
+  } else if (results==3 && gender=="female"){
     alert("Akua");
-  } else if (results==4 && gender==="female"){ 
+  } else if (results==4 && gender=="female"){ 
     alert("YAA"); 
-  } else if (results==5 && gender==="female") { 
+  } else if (results==5 && gender=="female") { 
     alert("Afua");
   } else  {          
     alert("Ama");
