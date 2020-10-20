@@ -2,7 +2,7 @@
  <html>
   <head>
       <title>Calculator web application</title>
-       <script src="js/scripts.js"></script>
+       
        <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
        <link href="css/style.css" rel="stylesheet" type="text/css">
   </head>
@@ -17,19 +17,20 @@
         <div class="col-md-6">
         <form id="details">
           <label for="birthDate">What day were you born?</label>
-           <input type="number" min="1" max="31" placeholder="e.g 26" id="birthDate">
+           <input type="number"  placeholder="e.g 26" id="birthDate">
           <label for="birthMonth">What month were you born?</label>
-           <input type="number" min="1" max="12" placeholder="e.g 7" id="birthMonth">
+           <input type="number"  placeholder="e.g 7" id="birthMonth">
           <label for="birthYear">Which year were you born?</label>
-           <input type="number" min="1" placeholder="e.g 2001" id="bithYear">
+           <input type="number"  placeholder="e.g 2001" id="birthYear">
         </div>
         <div class="col-md-6">
           <label >Please select your gender:</label>
-           <input type="radio" name="gender" value="male" checked>Male
-           <input type="radio" name="gender" value="female" >Female
+           <input type="radio" name="gender" value="Male" checked>Male
+           <input type="radio" name="gender" value="Female" >Female
 
            <button onclick="akanName()">Get Akan Name</button>
         </form>  
       </div>
+      <script src="js/scripts.js"></script>
     </body>
  </html>
