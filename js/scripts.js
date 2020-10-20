@@ -1,3 +1,17 @@
+function akanName () {
+  var dayOfBirth = parseInt(document.getElementById("birthDate").value);
+  var monthOfBirth = parseInt(document.getElementById("birthMonth").value);
+  var yearOfBirth = parseInt(document.getElementById("birthYear").value);
+    
+  var maleNmaes = ["Kwasi", "Kwadwo" ,"Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"]
+  var femaleNames = ["Akosua" ,"Adwoa", "Abenaa" ,"Akua", "Yaa" ,"Afua" ,"Ama"]
+
+
+
+  
+}
+
+
 // var date = function() {
 //   var CC=parseInt(prompt("Enter the century you were born,if its 1989 input 19:"));
 //   var YY = parseInt(prompt("Enter the year you were born,if its 1989 input 89:"));
