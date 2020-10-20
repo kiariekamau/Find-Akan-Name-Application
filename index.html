@@ -9,13 +9,23 @@
     <body>
       <div class="container">
         <div class="jumbotron">
-        <h1><strong>Find Akan Name application</strong></h1>
+        <h1><strong>Find Akan Name web application</strong></h1>
          <p>This web application takes a user's birthday and calculates the day of the week they were born and then depending on their gender outputs their Akan Name. </p>
           <p>Akan names are derived from Ghanian culture.Whereby children are given their first name as a 'day name' which corresponds to the day in the week they were born. </p>
         </div>
       </div>
       <div class="card">
-            
-          </div>
+        <form id="details">
+          <label for="birthDate">What day were you born?</label>
+           <input type="number" min="1" max="31" placeholder="e.g 26" id="birthDate">
+          <label for="birthMonth">What month were you born?</label>
+           <input type="number" min="1" max="12" placeholder="e.g 7" id="birthMonth">
+          <label for="birthYear">Which year were you born?</label>
+           <input type="number" min="1" placeholder="e.g 2001" id="bithYear">
+          <label >Please select your gender:</label>
+           <input type="radio" name="gender" value="male" checked>Male
+           <input type="radio" name="gender" value="female" >Female
+        </form>  
+      </div>
     </body>
  </html>
