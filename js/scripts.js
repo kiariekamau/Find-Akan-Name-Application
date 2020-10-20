@@ -18,14 +18,14 @@ function akanName () {
   var day = new Date(yb + "/" + mb + "/" + db);
   var result = day.getDay();
 
-  if (db<=0 || db>31 ) {
-     alert ("invalid date please enter a valid date")
+  if (db<=0 || db>31 || ( mb===2 && db>29)) {
+     alert ("invalid date please enter a valid date.")
   }
   else if( mb>12 || mb<1) {
-     alert ("invalid month please enter a valid date")
+     alert ("invalid month please enter a valid month.")
   }
   else if (yb.toString().length>4 || yb.toString().length<4 ) {
-     alert ("invalid year please enter a valid date")
+     alert ("invalid year please enter a valid year.")
   }
   else if (gender==="Male") {
     alert ("You were born on" + daysOfWeek[result]+ " .Your Akan Name is " + maleNames[result]);
