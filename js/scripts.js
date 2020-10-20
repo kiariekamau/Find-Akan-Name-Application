@@ -1,74 +1,40 @@
 function akanName () {
-  var dayOfBirth = parseInt(document.getElementById("birthDate").value);
-  var monthOfBirth = parseInt(document.getElementById("birthMonth").value);
-  var yearOfBirth = parseInt(document.getElementById("birthYear").value);
+  var db = parseInt(document.getElementById("birthDate").value);
+  var mb = parseInt(document.getElementById("birthMonth").value);
+  var yb = parseInt(document.getElementById("birthYear").value);
     
-  var maleNmaes = ["Kwasi", "Kwadwo" ,"Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"]
-  var femaleNames = ["Akosua" ,"Adwoa", "Abenaa" ,"Akua", "Yaa" ,"Afua" ,"Ama"]
+  var maleNames = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
+  var femaleNames = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
+  var daysOfWeek = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 
+  var gender = document.getElementsByName("gender");
+  if(gender.checked === true) {
+    gender = "Male";
+  }
+  else {
+    gender = "Female";
+  }
 
+  var day = new Date(yb + "/" + mb + "/" + db);
+  var result = day.getDay();
 
-  
+  if (db<=0 || db>31 ) {
+     alert ("invalid date please enter a valid date")
+  }
+  else if( mb>12 || mb<1) {
+     alert ("invalid month please enter a valid date")
+  }
+  else if (yb.toString().length>4 || yb.toString().length<4 ) {
+     alert ("invalid year please enter a valid date")
+  }
+  else if (gender==="Male") {
+    alert ("You were born on" + daysOfWeek[result]+ " .Your Akan Name is " + maleNames[result]);
+  }
+  else if (gender==="Female") {
+    alert ("You were born on" + daysOfWeek[result]+ " .Your Akan Name is " + femaleNames[result]);
+  }
+  else {
+    alert("Please re-fill the fields again");
+  }
 }
 
-
-// var date = function() {
-//   var CC=parseInt(prompt("Enter the century you were born,if its 1989 input 19:"));
-//   var YY = parseInt(prompt("Enter the year you were born,if its 1989 input 89:"));
-//   var MM=parseInt( prompt("Enter the month you were born e.g if january enter 1:"));
-//     if (MM<=0 || MM>12) {
-//     return alert("invalid month please enter a valid month")
-//  }
-//   var DD= parseInt(prompt("Enter the day you were born e.g 15:"));
-//     if (DD<=0 || DD>31) {
-//     return alert ("invalid date please enter a valid date")
-//  }
-//     return  ( ((CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD)%7
-//  } 
- 
-//   var results=date().toFixed()
-//   var gender= prompt("Enter your gender female/male:");
-//     if (results<=0) {
-//     alert("sunday");
-//   } else if (results==1) {
-//     alert("monday");
-//   } else if (results==2) {
-//     alert("tuesday");
-//   } else if (results==3){
-//     alert("wednesday");
-//   } else if (results==4){ 
-//     alert("thursday"); 
-//   } else if (results==5) { 
-//     alert("friday");
-//   } else {          
-//     alert("saturday");
-//   }
-//   if (results<=0 && gender=="male") {
-//     alert("Kwasi");
-//   } else if (results==1 && gender=="male") {
-//     alert("Kwadwo");
-//   } else if (results==2 && gender=="male") {
-//     alert("Kwabena");
-//   } else if (results==3 && gender=="male"){
-//     alert("Kwaku");
-//   } else if (results==4 && gender=="male"){ 
-//     alert("Yaw"); 
-//   } else if (results==5 && gender=="male") { 
-//     alert("Kofi");
-//   } else if (results==6 && gender=="male"){          
-//     alert("Kwame");
-//   } else if (results<=0 && gender=="female") {
-//     alert("Akosua");
-//   } else if (results==1 && gender=="female") {
-//     alert("Adwoa");
-//   } else if (results==2 && gender=="female") {
-//     alert("Abenaa");
-//   } else if (results==3 && gender=="female"){
-//     alert("Akua");
-//   } else if (results==4 && gender=="female"){ 
-//     alert("YAA"); 
-//   } else if (results==5 && gender=="female") { 
-//     alert("Afua");
-//   } else  {          
-//     alert("Ama");
-//   }
